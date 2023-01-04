@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose | Contact Page</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- <script>
+        function validateForm(){
+            if (document.forms[0].myEmail.value == ""){
+                alert("Please enter an e-mail adress.");
+                return false;
+            } //end if
+            return true;
+        } //end function validateForm
+    </script> -->
+
+    <style>
+        /* body{
+            background-color: #eaeaea;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        } */
+        h2{
+            color: #fff;
+            text-align: center;
+        }
+        form{
+            width: 600px;
+            background-color: #fff;
+            text-align: center;
+            padding: 1.5em;
+            color:#182F5E;
+            margin: 50px auto;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        input, textarea{
+            margin: 20px auto;
+            width: 350px;
+            border-radius: 1.5em;
+            outline: none;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+        }
+        input[type="submit"]{
+            color: #fff;
+            background-color: #2D4471;
+            cursor: pointer;
+            padding: 1em 3em;
+            width: 300px;
+            border: 0;
+        }
+        input[type="submit"]:hover{
+            color:#2D4471;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        input[type="radio"],input[type="checkbox"]{
+            width: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="banner">
+        <header>
+            <div class="logo">
+                <h1>Rose</h1>
+                <!-- <img src="images/logo.png" alt=""> -->
+            </div> <!--end logo div-->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Class</a>
+                        <ul>
+                            <li><a href="MATH118.html">MATH 118</a></li>
+                            <li><a href="SOC260.html">SOC 260</a></li>
+                            <li><a href="ESCI101.html">ESCI 102</a></li>
+                            <li><a href="CSCI102.html">CSCI 102</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="clearfix"></div>
+
+            <div class="banner-text">
+                <h1>Rose 20-21 Fall Courses</h1>
+                <p>Contact Info</p>
+            </div>
+        </header>
+        </div> <!--end banner div-->
+            
+        <br><br>
+        
+        <main>
+            <div class="class3">
+                <p>
+                If you have any question, contact me with: <br>
+                email: weir@wwu.edu <br>
+                phone: (1)-206-849-6276 <br>
+                Or use the following form to contact
+                </p>
+            </div>
+            <div class="clearfix"></div>
+            
+            <br><br>
+
+            <h2>HTML Forms</h2>
+
+            <form action="welcome.html" method="POST" autocomplete onsubmit="return validateForm();">
+
+                <label for="name">Name: </label>
+                <input type="text" name="myName" id="name">
+
+                <br>
+
+                <label for="email">Email: </label>
+                <input type="email" name="myEmail" id="myEmail">
+
+                <br>
+
+                <!-- <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Your name">
+
+                <br><br> -->
+
+                <label for="dob">Date of Birth: </label>
+                <input type="date" name="dob" id="">
+
+                <br>
+
+                <!-- <label for="remember">Remember Password</label>
+                <input type="checkbox" name="n1" id="n1">
+
+                <br><br> -->
+                    
+                <label for="">Gender: </label>
+                M <input type="radio" name="b1" id="b1">
+                F <input type="radio" name="b1" id="b2">
+
+                <br><br>
+
+                <!-- <label for="city">City</label>
+                <select name="city" id="city" required>
+                    <option value="">Select Your City</option>
+                    <option value="">Tacoma</option>
+                    <option value="">Seattle</option>
+                    <option value="">Bellingham</option>
+                    </select>
+
+                <br><br> -->
+
+                <label for="comments">Comments: </label> <br> 
+                <textarea name="" id="" cols="20" rows="20" placeholder="Comments..."></textarea>
+
+                    <!-- <input type="file"> -->
+
+                <br>
+                <input type="submit" value="Send Now" id="mySubmit">
+                <!-- <button onclick="checkPassword">Check Password</button>
+                <script src="js/script.js"></script> -->
+            </form>
+
+        </main>
+
+            
+
+            <footer>
+                Copyright &copy; 2020 Rose Wei
+                
+                <script> 
+                    var date = document.lastModified;
+                    document.write(date); 
+                </script>
+            </footer>
+        
+    </div> <!--end wrapper div-->
+    
+</body>
+</html>
